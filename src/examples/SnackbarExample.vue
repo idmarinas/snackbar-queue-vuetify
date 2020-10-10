@@ -1,5 +1,7 @@
 <template>
   <IdmSnackbarQueue
+    next-more-tpl-text="Siguiente (%s más)"
+    close-btn-icon="fa-times"
     :items="items"
     @remove-idm-snackbar-item="removeItem"
   />
