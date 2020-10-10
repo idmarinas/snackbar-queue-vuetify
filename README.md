@@ -5,7 +5,29 @@
 
 # Snackbar queue for Vuetify
 
-## Use as Plugin
+![](image.png)
+
+## Install
 ```bash
-npm install snackbar-queue-vuetify
+npm install @idmarinas/snackbar-queue-vuetify
 ```
+
+## Use as plugin
+```javascript
+import Vue from 'vue'
+import IdmSnackbarQueue from '@idmarinas/snackbar-queue-vuetify'
+
+Vue.use(IdmSnackbarQueue)
+```
+
+```vue
+<template>
+    <IdmSnackbarQueue
+        :items="items"
+        @remove-idm-snackbar-item="removeItem"
+    />
+</template>
+```
+
+## Example
+[Demo of Snackbar Queue](https://idmarinas.github.io/snackbar-queue-vuetify/)
